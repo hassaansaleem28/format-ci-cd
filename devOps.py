@@ -1,13 +1,21 @@
-def add_numbers(a, b):
-    result = a + b      # unused variable: result
-    return a + b        
+def add_numbers(a: int, b: int) -> int:
+    """
+    Return the sum of two numbers.
+    """
+    return a + b
 
 
-def greet (name):   # space before parentheses ❌
-      print("Hello " + name)  # wrong indentation ❌
+def greet(name: str) -> None:
+    """
+    Print a greeting message for the given name.
+    """
+    print(f"Hello {name}")
 
 
-def calculate_area(radius): 
-    pi = 3.141592653589793238462643383279502884197  # line too long ❌
-    area=pi*radius*radius  # missing spaces around '=' ❌
-    return area  
+def calculate_area(radius: float) -> float:
+    """
+    Calculate the area of a circle using the given radius.
+    """
+    pi = 3.14159
+    area = pi * radius * radius
+    return area
